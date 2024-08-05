@@ -1,17 +1,24 @@
 class Solution {
-    public String kthDistinct(String[] arr, int k) {
-        HashMap<String, Integer> countMap = new HashMap<>();
-        for (String s : arr) {
-            countMap.put(s, countMap.getOrDefault(s, 0) + 1);
-        }
-        ArrayList<String> distinctList = new ArrayList<>();
-        for (String s : arr) {
-            if (countMap.get(s) == 1) {
-                distinctList.add(s);
+    public String kthDistinct(String[] s, int k) {
+      List li=new ArrayList<>();
+        for(int i=0;i<s.length;i++)
+        {
+            int c=0;
+            for(int j=0;j<s.length;j++){
+
+                if(s[i].equals(s[j])&&i!=j)
+                {
+                    c++;
+                    break;
+                   
+                }
             }
+            if(c==0) li.add(s[i]);
         }
-        if (k <= distinctList.size()) {
-            return distinctList.get(k - 1);
+        if(k<=li.size())
+        {
+           return (String)li.get(k-1);
+            
         }
         return "";
     }
