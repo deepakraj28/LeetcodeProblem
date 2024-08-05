@@ -5,11 +5,13 @@ class Solution {
         {
             int c=0;
             for(int j=0;j<s.length;j++){
-
-                if(s[i].equals(s[j])&&i!=j)
+                if(i!=j){
+                if(s[i].equals(s[j]))
                 {
+                    
                     c++;
                     break;
+                    }
                    
                 }
             }
