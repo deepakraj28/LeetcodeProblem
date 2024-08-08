@@ -21,12 +21,12 @@ class Solution
             q.next=r;
         }
         temp=head;
-       ListNode t1=q;
-        while(t1!=null)
+     //  ListNode t1=q;
+        while(q!=null)
         {
-            if(temp.val==t1.val)
+            if(temp.val==q.val)
             {
-                t1=t1.next;
+                q=q.next;
                 temp=temp.next;
             }
             else
