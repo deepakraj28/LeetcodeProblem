@@ -2,7 +2,7 @@ class Solution
 {
     public boolean isPalindrome(ListNode head)
     {
-        ListNode temp=head;
+       // ListNode temp=head;
         ListNode fast=head;
         ListNode slow=head;
         while(fast!=null && fast.next!=null)
@@ -20,14 +20,14 @@ class Solution
             p=p.next;
             q.next=r;
         }
-        temp=head;
-     //  ListNode t1=q;
+      //  temp=head;
+   
         while(q!=null)
         {
-            if(temp.val==q.val)
+            if(head.val==q.val)
             {
                 q=q.next;
-                temp=temp.next;
+                head=head.next;
             }
             else
             {
