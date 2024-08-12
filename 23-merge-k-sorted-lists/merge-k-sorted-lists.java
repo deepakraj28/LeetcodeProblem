@@ -3,8 +3,7 @@ class Solution
     public ListNode mergeKLists(ListNode[] lists)
     {
         List<Integer> list = new ArrayList<>(); 
-        int i; 
-        for(i=0; i<=lists.length-1 ;i++)
+        for(int i=0; i<=lists.length-1 ;i++)
         {
             ListNode temp = lists[i];  
             while(temp!=null)
@@ -16,7 +15,7 @@ class Solution
         Collections.sort(list); 
         ListNode dummy = new ListNode(-1);  
         ListNode temp = dummy;  
-        for(i=0 ; i<list.size() ; i++)
+        for(int i=0 ; i<list.size() ; i++)
         {
             ListNode curr = new ListNode(list.get(i)); 
             temp.next = curr; 
