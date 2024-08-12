@@ -3,7 +3,8 @@ class Solution
     public ListNode mergeKLists(ListNode[] lists)
     {
         List<Integer> list = new ArrayList<>(); 
-        for(int i=0; i<=lists.length-1 ;i++)
+        for(int i=0; i<
+        lists.length;i++)
         {
             ListNode temp = lists[i];  
             while(temp!=null)
