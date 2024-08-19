@@ -3,10 +3,9 @@ class Solution {
      {
         int s=nums.length;
         int temp=nums[0];
-      
         for(int i=0;i<s;i++)
         {
-              int c=0;
+            int c=0;
             int r=nums[i];
             for(int j=0;j<s;j++)
             {
