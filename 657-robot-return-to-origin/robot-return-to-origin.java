@@ -7,11 +7,11 @@ class Solution
         {
             if(moves.charAt(i)=='L')
             {
-                x++;
+                x--;
             }
             if(moves.charAt(i)=='R')
             {
-                x--;
+                x++;
             }
              if(moves.charAt(i)=='U')
             {
